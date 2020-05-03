@@ -37,15 +37,15 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
-    <script src="src/randomPassword.js"></script>
+    <script src="src/pwd-js.js"></script>
 
     <script type="text/javascript">
         let btn = document.querySelector('div .card-body a.btn')
         btn.addEventListener('click', function() {
 
-            document.querySelector('#txtpassword').value = randomPassword.generate()
+            document.querySelector('#txtpassword').value = pwdjs.generate()
 
         })
     </script>

@@ -1,5 +1,5 @@
 {
-  "name": "random-pwd",
+  "name": "random-pwd-generator",
   "version": "1.0.0",
   "description": "pwd-js is a jQuery  plugin that helps to generate a safe password",
   "main": "index.js",
@@ -11,10 +11,12 @@
     "url": "git+https://github.com/inventivecode/random-pwd-js.git"
   },
   "keywords": [
-    "jQuery",
-    "plugin",
+    "jQuery plugin",
     "password",
-    "generator"
+    "password generator",
+    "random password",
+    "randomizer",
+    "javascript password"
   ],
   "author": "aminelch",
   "license": "GPL-3.0",
