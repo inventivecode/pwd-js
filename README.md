@@ -12,33 +12,37 @@
 
 ### Installation 
 
-	npm i random-pwd-generator
+			$ npm i random-pwd-generator
+		
+**or**
 
+			$ yarn add random-pwd-generator
+		
 ### Usage
 
 
 ##### Include the relevant files
 
-	// jQuery dependency 
-	<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-	// Then add pwd-js
-	<script src="src/pwd-js.js">
+		// jQuery dependency 
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+		// Then add pwd-js
+		<script src="src/pwd-js.js">
 
 	
 ##### Create an HTML element 
 
 for this demo we have create an input
 
-	<input id="txtpassword" type="text">
-
-
-    <script type="text/javascript">
-            //select a random button element 
-        let btn = document.querySelector('div .card-body a.btn')
-        btn.addEventListener('click', function() {
-  	        //apply the generate method to get a random password 
-            document.querySelector('#txtpassword').value = pwdjs.generate()
-
-        })
-    </script>
-    
+	    <input id="txtpassword" type="text">
+	
+	
+	    <script type="text/javascript">
+	            //select a random button element 
+	        let btn = document.querySelector('div .card-body a.btn')
+	        btn.addEventListener('click', function() {
+	  	        //apply the generate method to get a random password 
+	            document.querySelector('#txtpassword').value = pwdjs.generate()
+	
+	        })
+	    </script>
+	    
