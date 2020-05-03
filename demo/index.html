@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>pwd generator demo</title>
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#563d7c">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">pwd generator demo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+        <h1>Demonstration</h1>
+
+
+        <div class="card mt-4">
+            <div class="card-header">
+                Generate a new password
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <div class="card-text">
+                    <input type="text" id="txtpassword" class="form-control">
+                </div><br>
+                <a href="#" class="btn btn-success">generate! </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="src/randomPassword.js"></script>
+
+    <script type="text/javascript">
+        let btn = document.querySelector('div .card-body a.btn')
+        btn.addEventListener('click', function() {
+
+            document.querySelector('#txtpassword').value = randomPassword.generate()
+
+        })
+    </script>
+</body>
+
+</html>
